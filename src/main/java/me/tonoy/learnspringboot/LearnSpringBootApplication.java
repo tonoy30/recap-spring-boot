@@ -8,5 +8,8 @@ public class LearnSpringBootApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(LearnSpringBootApplication.class, args);
+        var game = new PacmanGame();
+        var gameRunner = new GameRunner(game);
+        gameRunner.run();
     }
 }
