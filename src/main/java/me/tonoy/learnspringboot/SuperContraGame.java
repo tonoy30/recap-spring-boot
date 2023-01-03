@@ -1,5 +1,8 @@
 package me.tonoy.learnspringboot;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SuperContraGame implements GameConsole {
     @Override
     public void up() {
