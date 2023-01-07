@@ -1,8 +1,10 @@
 package me.tonoy.learnspringboot;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+@Qualifier("PacmanGameQualifier")
 public class PacmanGame implements GameConsole {
     @Override
     public void up() {

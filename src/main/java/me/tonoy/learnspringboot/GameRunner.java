@@ -1,12 +1,13 @@
 package me.tonoy.learnspringboot;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
     private final GameConsole gameConsole;
 
-    public GameRunner(GameConsole gameConsole) {
+    public GameRunner(@Qualifier("PacmanGameQualifier") GameConsole gameConsole) {
         this.gameConsole = gameConsole;
     }
 
